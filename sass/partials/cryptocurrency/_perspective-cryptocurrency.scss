@@ -1,0 +1,63 @@
+.perspective-cryptocurrency {
+    margin-top: 190px;
+    @media (max-width:1196px){
+        margin-top: 50px;
+    }
+    .layout {
+        .content {
+            display: flex;
+            @media (max-width:1196px){
+                flex-direction: column;
+                align-items: center;
+            }
+            .experince-img {
+                width: 474px;
+                height: 594px;
+                margin-right: 120px;
+                @media (max-width:1196px){
+                    display: flex;
+                    justify-content: center;
+                    margin-right: 0px;
+                }
+                @media (max-width:389px){
+                    width: auto;
+                    height: auto;
+                }
+            } 
+            .experience-description {
+                max-width: 50%;
+                @media (max-width:923px){
+                    max-width:80%;
+                }
+                @media (max-width:389px){
+                    max-width: 100%;
+                }
+                h3{position: relative;
+                    margin: 25px 0 30px 5px;
+                    
+                    @include green-line;
+                }
+                p{
+                    font-family: 'Gilroy';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 114.8%;
+                    letter-spacing: 0.01em;
+                    color: #1D1B1B;
+                    margin-bottom: 25px;
+
+                }
+                .presentation{
+                    margin-top: 70px;
+                    width: 584px;
+                    height: 420px;
+                }
+            }
+        }
+    }
+    
+}
+
+
+

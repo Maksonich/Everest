@@ -1,0 +1,110 @@
+.asks {
+    margin-top: 100px;
+    padding-top: 50px;
+    @media (max-width:1196px){
+        margin-top: 0px;
+    }
+    .layout {
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .content {
+            max-width: 800px;
+            position: relative;
+            @media (max-width:463px){
+                max-width: auto;
+                width: 90%;
+            }
+            @media (max-width:464px){
+                width: 100%;
+            }
+            span.descript{
+                position: absolute;
+                top: -20px;left: 50%;
+            }
+            h3{
+                text-align: center;
+            }
+            ul {
+                margin-top: 80px;
+                li{ 
+                    border-bottom:  1px solid #DFDFDF; 
+                    
+                    .line{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        cursor: pointer;
+                       
+                        h4{
+                        font-family: 'Gilroy';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 17px;
+                        line-height: 57px;
+                        letter-spacing: 0.01em;
+                        color: $colortext;
+                        height: 57px;
+                        white-space: nowrap;
+                        @media (max-width:635px){
+                            font-size: 12px;
+                        }
+                        @media (max-width:398px){
+                            max-width: 100%;
+                            white-space: wrap;
+                        }
+                         }
+                        .plus{
+
+                            margin-left: 50px;
+                            display: block;
+                            @media (max-width:635px){
+                                margin-left: 50px;
+                                
+                            }
+                            @media (max-width:461x){
+                               margin-left: 10px;
+                            }
+                            @media (max-width:464px){
+                                display: none;
+                            }
+
+                            img{
+                                min-width: 22px;
+                                position: relative;
+                            }
+                        }
+                    }
+                   
+                    span{
+                        display: none;
+                       
+                    } 
+                }   
+                .ask-accord {
+                    .line{
+                        .plus{@include anim;
+                            transform: rotate(45deg);
+                        }
+                     }   
+                    span{
+                        @include anim;
+                        display: block;
+                        font-family: 'Gilroy';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 114.8%;
+                        letter-spacing: 0.01em;
+                        color: #1D1B1B;
+                        max-width: 600px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,65 @@
+.main-title {
+    position: relative;
+    height: 501px;
+    .banner-img{
+        position: absolute;
+        top: 0;left: 0;
+        z-index: -2;
+        min-width: 100%;
+        min-height: 501px;
+        img{
+            min-height: 501px;
+            width: 100%;
+            @media (max-width:1203px){
+                min-height: 420px;
+            }
+            @media (max-width:1033px){
+                min-height: 330px;
+            }
+            @media (max-width:768px){
+                object-fit: cover;
+                object-position: 75%;
+            }
+
+        }
+    }
+    .title{
+        margin-left: 20px;
+        h2{
+            margin-top: 118px;
+            width: 600px;
+
+            @media (max-width:1267px){
+                margin-top: 70px;
+                width: auto;
+            }
+            @media (max-width:349px){
+                margin-top: 15px;
+            }
+           
+        }
+        .subtitle{
+            margin-top: 20px;
+            width: 590px;
+            @media (max-width:768px){
+                width: auto;
+            }
+        }
+        .title-button {
+            margin-top: 35px;
+            @include button;
+            max-width: 190px;
+            @media (max-width:768px){
+                max-width: 90%;
+                margin: auto;
+                margin-top: 40px;
+            }
+            @media (max-width:349px){
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+
+

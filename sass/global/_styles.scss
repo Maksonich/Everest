@@ -1,0 +1,153 @@
+#wrapper,
+main,
+#content,
+#sidebar,
+aside,
+section{
+	@include box;
+}
+.layout {
+	@include box;
+	width:1200px;
+	margin:0 auto;
+	@media (max-width:1203px){
+		max-width: 100%;
+		padding: 0 10px;
+	}
+}
+body{
+	color: #1D1B1B
+}
+body.not-scroll{
+	overflow-y: hidden;
+}
+h2{
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 50px;
+	line-height: 114.8%;
+	letter-spacing: 0.01em;
+	color: #FFFFFF;
+	@media (max-width:1033px){
+		font-size: 45px;
+		line-height: 105%;
+	}
+	@media (max-width:768px){
+		font-size: 24px;
+		text-align: center;
+	}
+}
+h3{
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 114.8%;
+	letter-spacing: 0.01em;
+	@media (max-width:768px){
+		font-size: 24px;
+	}
+}
+span.descript{
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 114.8%;
+	letter-spacing: 0.075em;
+	color: #D2D2D2;
+	@media (max-width:768px){
+	font-size: 12px;}
+
+}
+.subtitle{
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 114.8%;
+	letter-spacing: 0.01em;
+	color: #FFFFFF;
+	@media (max-width:768px){
+		font-size: 12px;
+		line-height: 150%;
+		text-align: center;
+	}
+}
+.layout .two h2{
+    padding-top: 70px;
+}
+.way {
+	position: absolute;
+	top:20px;left: 0px;
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 114.8%;
+	letter-spacing: 0.01em;
+	color: #FFFFFF;
+	span{
+		color: $colorh2;
+		margin: 0 12px;
+	}
+	a{
+		color: $colorh2;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+.none{
+	display: none;
+}
+.main-crypto{
+	.layout{
+		.title{
+			h2{
+				margin-top: 143px;
+				@media (max-width:1034px){
+					margin-top: 100px;
+				}
+				@media (max-width:749px){
+					margin-top: 80px;
+				}
+			}
+		}
+	}
+	
+}
+.mobi-nav{
+	display: none;
+}
+.mobi-nav-active{
+	display: block;
+	position: absolute;
+	top: 70px;left: 0;bottom: 0;right: 0;
+	width: 100vw;
+	height: 100%;
+	background-color: rgb(253, 253, 253);
+	z-index: 999;
+	ul{
+		position: absolute;
+		transform: translateX(-50%);
+		top: 10vh;
+		left: 50%;
+		li{
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 17px;
+			line-height: 114.8%;
+			letter-spacing: 0.01em;
+			color: $colorbtn;
+			text-align: center;
+			margin: 5vh;
+			white-space: nowrap;
+			a{
+				color: $colorh3;
+			}
+		}
+	}
+}

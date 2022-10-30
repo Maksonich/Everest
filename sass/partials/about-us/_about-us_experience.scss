@@ -1,0 +1,101 @@
+.experience {
+    margin-top: 150px;
+    @media (max-width:1171px){
+        margin-top: 100px;
+    }
+    .layout {
+        .content{
+            display: flex;
+            justify-content: space-between;
+            @media (max-width:1171px){
+                flex-direction: column;
+                align-items: center;
+            }
+            .h3-responsive{
+                display: none;
+                @media (max-width:1171px){
+                    display: block;
+                    @include green-line;
+                    position: relative;
+                    margin: 25px 0 30px 5px;
+                }
+            }
+            .experince-img {
+                width: 50%;
+                margin-right: 100px;
+                @media (max-width:1171px){
+                    margin-right: 0;
+                    width: auto;
+                }
+            }
+            .experience-description {
+                max-width: 50%;
+                @media (max-width:1171px){
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 100px;
+                }
+                @media (max-width:768px){
+                    max-width: 80%;
+                    margin-bottom: 50px;
+                }
+                @media (max-width:345px){
+                    max-width: none;
+                }
+                h3{position: relative;
+                    margin: 25px 0 30px 5px;
+                    @include green-line;
+                    @media (max-width:1171px){
+                        display: none;
+                    }
+                }
+                p{
+                    font-family: 'Gilroy';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 114.8%;
+                    letter-spacing: 0.01em;
+                    color: #1D1B1B;
+                    margin-bottom: 25px;
+                    @media (max-width:1171px){
+                        margin-top: 50px;
+                    }
+
+                }
+                .presentation{
+                    margin-top: 70px;
+                    width: 584px;
+                    height: 420px;
+                    margin-bottom: 100px;
+                    @media (max-width:1171px){
+                        align-self: center;
+                    }
+                    @media (max-width:768px){
+                        display: none;
+                    }
+                }
+                .presentation-responsive{
+                    display: none;
+                    
+                    @media (max-width:768px){
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        
+                        img{
+                            margin-bottom: 20px;
+                            width: 100%;
+                            &:last-child{
+                                margin-bottom: 120px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+}
+
+

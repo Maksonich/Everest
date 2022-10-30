@@ -1,0 +1,210 @@
+.contacts {
+        padding-right: calc((100% - 1200px) / 2 );
+        display: flex;
+        justify-content: end;
+        background: linear-gradient(147.12deg, rgba(207, 207, 207, 0.5) 16.85%, rgba(179, 179, 179, 0) 55.76%), url(.jpg);
+        @media (max-width:1000px){
+            justify-content: center;
+        }
+        
+        .title-img {
+            margin-right: 52px;
+            width: 678px;
+            height: 684px;
+            position: relative;
+            @media (max-width:1145px){
+                margin-right: 10px;
+            }
+            @media (max-width:1000px){
+                display: none;
+            }
+            .way{
+                position: absolute;
+                top: 20px;
+                left: 120px;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .contacts-block {
+            margin-top: 55px;
+            width: 590px;
+            min-height:536px;
+           
+            h3{
+                margin-left: 78px;
+                position: relative;
+                @include green-line;
+                @media (max-width:599px){
+                        margin: 0 0 0 100px
+                }
+                @media (max-width:427px){
+                    width: 90%;
+                    margin: 0 0 0 100px;
+                }
+            }
+            .link-contacts {
+                margin-top: 80px;
+                display: flex;
+                @media (max-width:599px){
+                        flex-direction: column;
+                        
+                }
+                .messengers,
+                .mail,
+                .address {
+                    display: flex;
+                    flex-direction: column;
+                    @media (max-width:599px){
+                        margin: 0 0 40px 100px;
+                    }
+
+                    @media (max-width:513px){
+                        margin-left: 0px;
+                        align-items: center;
+                    }
+                    span{
+                        margin-bottom: 15px;
+                        font-family: 'Gilroy';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 14px;
+                        line-height: 114.8%;
+                        letter-spacing: 0.075em;
+                        color: #D2D2D2;
+                    }
+                }
+                .mail,
+                .address{
+                    margin-right: 69px;
+                    @media (max-width:513px){
+                        margin-right: 0px;
+                        align-items: center;
+                    }
+                    a{
+                        color: $colortext;
+                        font-family: 'Gilroy';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 114.8%;
+                        letter-spacing: 0.01em;
+                    }
+                }
+                .messengers a{
+                    margin-right: 10px;
+                }
+            }
+
+        .form {
+            margin-top: 80px;
+            position: relative;
+            @include form-style;
+            @media (max-width:513px){
+                margin-top: 0px;
+            }
+            @media (max-width:437px){
+               max-width: 400px;
+            }
+            .successfullyOne{
+                display: none;
+                color:  green;
+                font-size:30px;
+                margin: 100px 50px;
+            }
+            span{
+                margin-bottom: 22px;
+                max-width: 333px;
+                margin-left: 180px;
+                position: relative;
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 114.8%;
+                letter-spacing: 0.01em;
+                color: $colortext;
+                @include green-line;
+                @media (max-width:1063px){
+                    margin-left: 60px;
+                }
+                @media (max-width:513px){
+                    margin-left: 0px;
+                }
+            }
+            form{
+                position: relative;
+                margin-left: 102px;
+                @media (max-width:1063px){
+                    margin-left: 30px;
+                }
+                @media (max-width:1000px){
+                    margin:  0px 0px 100px 100px}
+                @media (max-width:513px){
+                    margin: 0 0  100px 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                @media (max-width:513px){
+                    margin-right: -40px;
+                }
+                @media (max-width:437px){
+                    margin: auto;
+                 }
+                 
+                form{
+                    @include form-style;
+                    margin-top: 30px;
+                    .not-necessarily::after{
+                        content: "(не обязательно)";
+                        position: relative;
+                        top: -41px;left: 80px;
+                        font-family: 'Gilroy';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 114.8%;
+                        letter-spacing: 0.01em;
+                        color :rgba(176, 176, 176, 1);
+                        white-space: nowrap;
+                        @media (max-width:1183px){
+                            left: 80px;
+                        }
+                        @media (max-width:405px){
+                            top: -41px;left: -40px;
+                        }
+                        @media (max-width:391px){
+                            display: none;
+                        }
+                       
+                    }
+                    
+                }
+                .additionaly {
+                    p{
+                        margin: 30px 0 0 70px;
+                        position: relative;
+                        width: 465px;
+                       @include green-line;
+                       @media (max-width:535px){
+                        
+                        width: 85%;
+                        }
+                        @media (max-width:453px){
+                            margin: 30px 0 0 30px;
+                        }
+                    }
+                    .icon-image {
+                        margin: 20px 0 0 70px;
+                        img{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        }
+}

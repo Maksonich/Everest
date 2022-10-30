@@ -1,0 +1,151 @@
+.our-services {
+    margin-top: 150px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    @media (max-width:768px){
+        margin-top: 70px;
+    }
+    .layout {
+    overflow: visible;
+      .content {
+       display: block;
+        .title{
+            position: relative;
+            @media (max-width:1203px){
+                width: 590px;
+                margin: auto;
+            }
+            @media (max-width:768px){
+                width: 490px;
+            }
+            @media (max-width:485px){
+                width: auto;
+            }
+           span.descript{
+            position: absolute;
+            top: -20px;left: -6px;
+            @media (max-width:768px){
+                left: 15px;
+            }
+           
+        }
+        h3{
+            margin-left: 72px;
+            position: relative;
+            span{
+                color: $colorbtn;
+            }
+           @include green-line;
+           @media (max-width:1203px){
+            text-align: center;
+            }
+          
+        }  
+        }
+       
+        .services {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            @media (max-width:1203px){
+                flex-direction: column;
+                align-items: center;
+                
+            }
+            .exchange,.cryptocurrency{
+                height: 312px;
+                width: 590px;
+                box-shadow:0px 0px 5px rgb(161, 161, 161);
+                border-radius: 15px;
+                @media (max-width:1203px){
+                    margin-bottom: 30px;
+                }
+                @media (max-width:617px){
+                    display: flex;
+                    flex-direction: column;
+                    width: 335px;
+                    height: 473px;
+                }
+                @media (max-width:341px){
+                    padding: 10px 5px;
+                    width: 98%;
+                    height: auto;
+                }
+                .logo-foot{
+                    display: none;
+                    @media (max-width:617px){
+                        display: block;
+                        align-self: center;
+                        margin: 30px 0;
+                    }
+                }
+                .additional-img {
+                        float: right;
+                        margin: 10px 43px 40px 0;
+                        @media (max-width:617px){
+                            float:none ;
+                            margin: auto;
+                        }
+                        @media (max-width:341px){
+                            margin: auto;
+                        }
+                       img{
+                        position: relative;
+                       
+                       }
+                } 
+                .logo{
+                    margin: 30px;
+                    @media (max-width:617px){
+                        display: none;
+                   
+                    }
+                    img{
+                        position: relative;
+                    }
+                }
+                h5{
+                    margin: 83px 0 0 30px;
+                    font-family: 'Gilroy';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 114.8%;
+                    letter-spacing: 0.01em;
+                    color: #01D957;
+                    @media (max-width:617px){
+                      margin: 0 0 15px 20px;
+                    }
+                }
+                p{
+                    width: 400px;
+                    margin: 15px 0 0 30px;
+                    font-family: 'Gilroy';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 114.8%;
+                    letter-spacing: 0.01em;
+                    color: $colortext;
+                        @media (max-width:617px){
+                            margin: 0 0 0 20px;
+                            min-width: none;
+                            max-width: 295px;
+                        }
+                        @media (max-width:341px){
+                            margin: 0 10px 0 10px;
+                            width: 98%;
+                            max-width: none;
+                            white-space: wrap;
+                        }
+                }
+            }
+           
+        }
+}  
+}
+}
+
+
+
+

@@ -1,0 +1,173 @@
+header {
+	@include box;
+	overflow: visible;
+	.layout{
+		overflow-y: visible;
+		max-width: 100%;
+		overflow: visible;
+		nav{
+			height: 75px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			position: relative;
+			
+			.logotype {
+				display: block;
+				img{
+					position: relative;
+				}
+			}
+			ul{
+				display: flex;
+				
+				@media (max-width:768px){
+					display: none;
+				}
+				li{
+					@include font-header;
+					margin-right: 72px;
+					a{
+						color: #1D1B1B
+					}
+					&:last-child{
+						margin-right: 0;
+
+					}
+					
+				}
+			}
+			.little-window{
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				top: 50px;
+				left: 890px;
+				z-index: 999;
+				background-color: #D2D2D2;
+				height: 50px;
+				width: 130px;
+				text-align: center;
+				border-radius: 5px;
+				a{
+					@include font-header;
+					margin: 7px 0 0 0;
+					color: $colortext;
+				}
+			}
+			.callback {
+				@include button;
+				
+				@media (max-width:768px){
+					display: none;
+				}
+			}
+			
+		}
+		.mobail-menu{
+			display:none;
+			@media (max-width:768px){
+				display:flex;
+			}
+			.callback-tell{
+			cursor: pointer;
+			background-color: $colorbtn;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background-image: url(../images/icons/Tell.png);
+			background-repeat: no-repeat;
+			background-position: 50% ;
+			}
+			.burger-menu{
+						width: 30px;
+						height: 30px;
+						cursor: pointer;
+						margin-left: 20px;
+					.burger {
+						display: none;
+						position: relative;
+						top: 18px;right: 0;
+						width: 30px;
+						height: 2px;
+						border-radius: 8px;
+						background-color: $colorbtn;
+						transition: all .3s ease-in-out;
+						-webkit-transition: all .3s ease-in-ou;
+						@media (max-width:768px){
+							display:block;
+							z-index: 3;
+						}
+						&:after{
+							content:'';
+							position: absolute;
+							top: 12px;left: 0;
+							width: 30px;
+							height: 2px;
+							border-radius: 8px;
+							background-color: $colorbtn;
+							
+						}
+						&:before{
+							content:'';
+							border-radius: 8px;
+							position: absolute;
+							top: -12px;left: 0;
+							width: 30px;
+							height: 2px;
+							background-color: $colorbtn;
+						}
+					}
+					.burger.cross{
+						top: 18px;left: 0px;
+						transform: rotate(135deg);
+					&:after {
+						transform: rotate(-45deg);
+						top: -7px;
+						opacity: 0;
+					  }
+					&:before {
+						transform: rotate(270deg);
+						top: -0px;
+					}
+					}
+				
+			
+			}
+		}
+		
+	}
+}
+ul.blocks li ul {
+display: none;	
+}
+ul.blocks li:hover {
+	position: relative;
+}
+ul.blocks li:hover > ul {
+	display: block;
+}
+ul.blocks li:hover ul{
+display: none;
+display: block;
+position: absolute;
+top: 15px;
+left: -40px;
+align-items: center;
+background-color: #D2D2D2;
+z-index: 9999;
+width: 140px;
+border: 1px solid $colorbtn;
+border-radius: 7px;
+padding: 10px;
+text-align: center;
+li{
+	@include font-header;
+	margin-right: 0px;
+	&:first-child{
+		margin-bottom: 10px;
+	}
+}
+
+	
+}

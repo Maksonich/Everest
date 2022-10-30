@@ -1,0 +1,21 @@
+/* SCSS Compiled */
+@import "global/reset.scss";
+@import "global/mixins.scss";
+@import "global/var.scss";
+@import "global/styles.scss";
+
+@import "partials/header.scss";
+@import "partials/footer.scss";
+@import "partials/modal-window.scss";
+@import "partials/main-title.scss";
+@import "partials/everest-finance.scss";
+@import "partials/our-services.scss";
+
+@import "partials/about-us/about-us_experience.scss";
+@import "partials/about-us/about-us_form";
+
+@import "partials/contacts/contacts.scss";
+
+@import "partials/cryptocurrency/what-is-cryptocurrency.scss";
+@import "partials/cryptocurrency/perspective-cryptocurrency";
+@import "partials/cryptocurrency/asks.scss";

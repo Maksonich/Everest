@@ -1,0 +1,145 @@
+.popup .blocker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: ' ';
+    background: rgba(0,0,0,.7);
+}
+.popup_catalog { 
+	@include anim;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	opacity: 0;
+	display: block;
+	z-index: -1;
+	
+	&.open {
+		opacity: 1;
+		z-index: 9999;
+	}
+	.flex {
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.box {
+		display: block;
+		width:437px;
+		height: 350px;
+		box-sizing: border-box;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 15px rgba(24, 24, 24, 0.63);
+		border-radius: 3px;
+		position: relative;
+		@media (max-width: 455px){
+			width: 98%;
+		}
+		.close {
+			position: absolute;
+			top: 10px;
+			right: -60px;
+			width: 20px;
+			height: 20px;
+			display: block;
+			overflow: hidden;
+			cursor: pointer;
+			z-index: 9999;
+			@media (max-width: 767px) {
+				top: 10px;
+				right: 10px;
+			}
+			img{
+				@include img;
+			}
+		}
+		h3 {
+			@include font;
+			display: block;
+			margin-top:10px ;
+			text-align: center;
+			margin-bottom: 50px;
+			box-sizing: border-box;
+			position: relative;
+			font-weight: 500;
+			font-size: 27px;
+			line-height: 130%;
+			color: $text;
+		}
+		.successfully img{
+			display: none;
+			position: fixed;
+			left: 50%;
+			transform: translate(-50%);
+		}
+		form{
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		padding: 0 25px;
+		@media (max-width:1183px){
+			align-items: center;
+			label input{
+			display: flex;
+			justify-content: center;
+		}
+		}
+		@media (max-width:385px){
+			max-width: 90%;
+		}
+		label{
+		display: flex;
+		flex-direction: column; 
+		
+		@media (max-width:405px){
+		align-items: center; 
+		width: 100%;
+		}
+		
+		}
+		input{
+			margin-bottom: 10px;
+			width: 387px;
+			height: 48px;
+			background: #FBFBFB;
+			border: 1px solid #EEEDED;
+			border-radius: 4px;
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 114.8%;
+			letter-spacing: 0.01em;
+			color: #1D1B1B;
+			padding-left: 15px;
+			@media (max-width:405px){
+				width: 90%;
+			}
+		}
+		button{
+		@include button;
+		margin-top: 5px;
+		border: none;
+		width: 387px;
+		height: 43px;
+		color: #fff;
+		@media (max-width:381px){
+			max-width: 90%;
+		}
+			
+		}
+		
+
+		}
+			
+	}
+}
